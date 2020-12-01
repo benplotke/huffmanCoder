@@ -209,8 +209,7 @@ public class HuffmanCoder {
 	 * @param path The path to the root node. Right is zero, left is one.
 	 * @param map An HNode array size 256. Each node will be mapped to the index of it's char.
 	 */
-	private static void buildCodeMap(HNode root, int level, BitSet path,
-												HNode[] map) {
+	private static void buildCodeMap(HNode root, int level, BitSet path, HNode[] map) {
 		if (root.left == null) {
 			root.level = level;
 			root.path = path;
